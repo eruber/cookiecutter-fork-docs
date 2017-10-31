@@ -36,5 +36,6 @@ Cookiecutter v2 Context Dev Notes
    testing
    travis
    appveyor
+   tool
    conclusion
 
