@@ -24,9 +24,9 @@ Cookiecutter v2 Dev/Test Notes
 
 This documentation serves as a set of notes for the developer and a record of
 testing & implementation for those individuals who wish to better understand the
-technical details of this fork of `Cookiecutter Repo on GitHub`_ in order to
+technical details of forking the `Cookiecutter Repo on GitHub`_ in order to
 implement a new **cookeicutter.json** format spec as proposed by
-`hackebrot's cookiecutter pull request #848`.
+`hackebrot's cookiecutter pull request #848`_.
 
 .. _hackebrot's cookiecutter pull request #848: https://github.com/audreyr/cookiecutter/pull/848
 .. _Cookiecutter Repo on GitHub: https://github.com/audreyr/cookiecutter

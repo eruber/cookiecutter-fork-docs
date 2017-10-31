@@ -24,7 +24,7 @@ Introduction
 
 This documentation serves as a set of notes for the developer and a record of
 testing & implementation for those individuals who wish to better understand the
-technical details of this fork of `Cookiecutter Repo on GitHub`_ in order to
+technical details of forking the `Cookiecutter Repo on GitHub`_ in order to
 implement a new **cookeicutter.json** format spec as proposed by
 `hackebrot's cookiecutter pull request #848`_.
 
@@ -37,6 +37,8 @@ The following are useful Cookiecutter references:
    * `ReadTheDocs`_
    * `Cookiecutter Repo on GitHub`_
    * `hackebrot's cookiecutter pull request #848`_ - the catalyst for this implementation effort
+   * `Cookiecutter v2 Fork`_
+
 
 
 Timeline
@@ -53,4 +55,5 @@ overwrites for each type of field supported in the v2 context.
 .. _hackebrot's cookiecutter pull request #848: https://github.com/audreyr/cookiecutter/pull/848
 .. _ReadTheDocs: http://cookiecutter.readthedocs.io/en/latest/readme.html
 .. _Cookiecutter Repo on GitHub: https://github.com/audreyr/cookiecutter
+.. _Cookiecutter v2 Fork: https://github.com/eruber/cookiecutter/tree/new-2.0-context/cookiecutter
 
