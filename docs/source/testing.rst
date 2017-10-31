@@ -30,13 +30,13 @@ The baseline v1.6.0 test run in the :ref:`Setup section <baseline_test_run>` sho
 
 The v2.0.0 test run below shows the following totals::
 
-   =================== 307 passed, 1 skipped in 38.97 seconds =================
+   =================== 308 passed, 1 skipped in 38.97 seconds =================
 
-So thus far, 47 tests have been added::
+So thus far, 48 tests have been added::
 
                        v1.6.0  v2.0.0    Delta   Delta
                         Tests   Tests    Tests     %
-         Test Totals     261     308      47    +18.0%
+         Test Totals     261     309      48    +18.4%
 
 
 The following new test files & test support directories:
@@ -76,7 +76,7 @@ Test coverage for v2.0.0 looks like this::
    -----------------------------------------------------------
    TOTAL                          1000      3    99%
 
-   =================== 307 passed, 1 skipped in 38.97 seconds =================
+   =================== 308 passed, 1 skipped in 42.95 seconds =================
 
 
 Also to improve the test coverage report, an additional option was added to
