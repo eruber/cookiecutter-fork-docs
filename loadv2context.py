@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-v2 cookiecutter context experimentor
-------------------------------------
+v2 cookiecutter context dumper
+------------------------------
 
 """
 import codecs
