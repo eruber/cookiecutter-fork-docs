@@ -119,7 +119,7 @@ Added **generate.apply_default_overwrites_to_context2()** to mirror for v2
 context what **generate.apply_overwrites_to_context()** does for v1
 context.
 
-Also added **generate.apply_extra_overwrites_to_context2()** to handle v2
+Also added **generate.apply_overwrites_to_context_v2()** to handle v2
 context overwrites via the extra context.
 
 Modifed **generate.generate_context()** to check for v1 or v2 context and
@@ -143,7 +143,7 @@ choices list does not explicitly specify this behavior.
 Special Overwrite Syntax
 ^^^^^^^^^^^^^^^^^^^^^^^^
 A couple of special syntax tokens were introduced in the **extra context**
-processing contained in **generate.apply_extra_overwrites_to_context2()** that
+processing contained in **generate.apply_overwrites_to_context_v2()** that
 allow the following overwrite capabilities:
 
    1. Change 'name' field in a variable
