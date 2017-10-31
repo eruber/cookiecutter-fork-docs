@@ -238,6 +238,27 @@ therefore test development and implementation work can begin.
 
 To compare these baseline test numbers to the v2.0.0 test numbers go to the :ref:`testing-section` section.
 
+
+Additional Setup to Build Documentation
+=======================================
+In order to build the Cookiecutter docs, the following additional packages
+need to be installed::
+
+      pip install sphinx
+      pip install sphinx_rtd_theme
+
+Then change directory into the repo's top-level **cookiecutter/docs** directory and do::
+
+      make html
+
+My experience with the docs build is that it succeeded but generated 26 warnings.
+
+To view the docs, point your web browser at::
+
+      cookiecutter/docs/_build/html/index.html
+
+
+
 .. _Cookiecutter Version 2 Project on GitHub: https://github.com/eruber/cookiecutter
 .. _Cookiecutter Repo on GitHub: https://github.com/audreyr/cookiecutter
 .. _Virtual Box: https://www.virtualbox.org/wiki/Downloads
