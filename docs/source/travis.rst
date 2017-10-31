@@ -18,23 +18,19 @@
 
 .. ---------------------------------------------------------------------------
 
-.. Cookiecutter Context V2 Fork Documentation documentation master file, created by
-   sphinx-quickstart on Sun Oct 29 11:00:26 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+****************
+CI Travis Status
+****************
+The Travis screen shot below illustrates the current status of the project
+measured against the official **Cookiecutter Contributor Guidelines**:
 
-Cookiecutter v2 Context Dev Notes
-=================================
+   * Support for Python versions 3.6, 3.5, 3.4, 3.3
+   * **Not supporting** Python 2.7 and PyPy (which is based on Python 2.7.13)
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+For the latest up-to-date Travis status see `Cookiecutter v2 @ Travis`_.
 
-   intro
-   setup
-   implementation
-   testing
-   travis
-   appveyor
-   conclusion
 
+.. image:: _static/ci-travis-report.png
+
+
+.. _Cookiecutter v2 @ Travis: https://www.travis-ci.org/eruber/cookiecutter
