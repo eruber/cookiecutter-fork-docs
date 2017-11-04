@@ -286,6 +286,26 @@ cookiecutter/context.py
    which in and of itself is probably too heavy of a lift.
 
 
+Documentation Updates
+=====================
+Documentation that has been updated:
+
+1. The API documentation has been updated
+
+Documentation that has **not** yet been updated (mostly because of a desire
+for some concensus moving forward with the user docs):
+
+1. The user manual portion of the docs has not been updated, but has been
+   reviewed and the best approach I think would be to add a new third tutorial
+   covering the version 2 template format. Also any place in the user docs
+   where a version 1 format is shown, we could add the analogous version 2
+   format as well.
+
+2. If this pull request gains momentum, and a concensus is reached on what
+   approach is best for the user docs, I will be happy to do the initial
+   implementation.
+
+
 .. _hackebrot's cookiecutter pull request #848: https://github.com/audreyr/cookiecutter/pull/848
 .. _the new-context-format branch of this hackebrot repo: https://github.com/hackebrot/cookiecutter/tree/new-context-format/
 .. _TOML: https://github.com/toml-lang/toml
