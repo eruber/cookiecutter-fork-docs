@@ -53,4 +53,4 @@ I am impressed with your fortitude.
 
 
 .. _hackebrot's cookiecutter pull request #848: https://github.com/audreyr/cookiecutter/pull/848
-.. _here: http://https://github.com/eruber/cookiecutter-template-converter
+.. _here: https://github.com/eruber/cookiecutter-template-converter
