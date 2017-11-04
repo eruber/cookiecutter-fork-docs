@@ -36,7 +36,7 @@ simply because I wanted a "skip_if" feature and I was so impressed by
 hachebrot's **context.py** code.
 
 Another apology for not including Python 2.7 support as per the Contributor
-Guidelines -- I honestly lack the ergs to do it now -- I would like to say
+Guidelines -- I lack the ergs to do it now -- I would like to say
 that quite honestly, for me Python 2.7 is a blip on the horizon in my
 rear-view mirror. However, with some help, I am sure we could clear this
 hurdle.
