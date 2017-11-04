@@ -3,14 +3,14 @@
 """
 contextdump.py
 --------------
-Usage: contextdump.py [OPTIONS]
+Usage: contextdump.py [--cct FILE] [--no-input] [--tdump
 
   Load the specified json object from the --cct PATH and if --no-input is
   omitted, prompt the user for input. After all input is gathered, the
   template's context is dumped.
 
 Options:
-  --cct PATH  Path to a Cookiecutter template file (cct), defaults to
+  --cct FILE  File name of a Cookiecutter template file (cct), defaults to
               'cookiecutter.json'
   --no-input  Do not prompt for parameters and only use cookiecutter.json file
               content
@@ -33,7 +33,7 @@ import click
 
 @click.command(context_settings=dict(help_option_names=[u'-h', u'--help']))
 @click.option(
-    '--cct', default='cookiecutter.json', type=click.Path(),
+    '--cct', default='cookiecutter.json', type=click.File(),
     help="Path to a Cookiecutter template file (cct), defaults to 'cookiecutter.json'"
 )
 @click.option(
@@ -43,10 +43,10 @@ import click
 @click.option(
     '--tdump', is_flag=True, default=False,
     help='If specified, dump the  input Cookiecutter template file specified '
-         'by the --cct PATH option')
+         'by the --cct FILE option')
 def main(cct, no_input, tdump):
     """
-    Load the specified json object from the --cct PATH and if --no-input is
+    Load the specified json object from the --cct FILE and if --no-input is
     omitted, prompt the user for input. After all input is gathered, the
     template's variable context is dumped.
     """

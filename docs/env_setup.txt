@@ -1,0 +1,256 @@
+
+
+d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>python -m venv .venv
+
+d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>echo .venv\Scripts\activate.bat > start_venv.bat
+
+d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>echo .venv\Scripts\deactivate.bat > stop_venv.bat
+
+d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>dir
+ Volume in drive D is Data
+ Volume Serial Number is 40EB-15E3
+
+ Directory of d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs
+
+10/29/2017  10:53 AM    <DIR>          .
+10/29/2017  10:53 AM    <DIR>          ..
+10/29/2017  10:42 AM             1,258 .gitignore
+10/29/2017  10:52 AM    <DIR>          .venv
+10/29/2017  10:49 AM    <DIR>          docs
+10/29/2017  10:45 AM             1,106 LICENSE
+10/29/2017  10:53 AM                29 start_venv.bat
+10/29/2017  10:53 AM                31 stop_venv.bat
+               4 File(s)          2,424 bytes
+               4 Dir(s)  119,008,468,992 bytes free
+
+d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>start
+
+d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>start_venv.bat
+
+d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>.venv\Scripts\activate.bat
+(.venv) d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>pip list
+Package    Version
+---------- -------
+pip        9.0.1
+setuptools 28.8.0
+
+(.venv) d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>pip install sphinx
+Collecting sphinx
+  Downloading Sphinx-1.6.5-py2.py3-none-any.whl (1.9MB)
+    100% |████████████████████████████████| 1.9MB 725kB/s
+Collecting sphinxcontrib-websupport (from sphinx)
+  Using cached sphinxcontrib_websupport-1.0.1-py2.py3-none-any.whl
+Collecting Pygments>=2.0 (from sphinx)
+  Using cached Pygments-2.2.0-py2.py3-none-any.whl
+Collecting six>=1.5 (from sphinx)
+  Using cached six-1.11.0-py2.py3-none-any.whl
+Collecting alabaster<0.8,>=0.7 (from sphinx)
+  Using cached alabaster-0.7.10-py2.py3-none-any.whl
+Collecting colorama>=0.3.5; sys_platform == "win32" (from sphinx)
+  Using cached colorama-0.3.9-py2.py3-none-any.whl
+Collecting snowballstemmer>=1.1 (from sphinx)
+  Using cached snowballstemmer-1.2.1-py2.py3-none-any.whl
+Requirement already satisfied: setuptools in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx)
+Collecting requests>=2.0.0 (from sphinx)
+  Using cached requests-2.18.4-py2.py3-none-any.whl
+Collecting docutils>=0.11 (from sphinx)
+  Using cached docutils-0.14-py3-none-any.whl
+Collecting imagesize (from sphinx)
+  Using cached imagesize-0.7.1-py2.py3-none-any.whl
+Collecting Jinja2>=2.3 (from sphinx)
+  Using cached Jinja2-2.9.6-py2.py3-none-any.whl
+Collecting babel!=2.0,>=1.3 (from sphinx)
+  Using cached Babel-2.5.1-py2.py3-none-any.whl
+Collecting urllib3<1.23,>=1.21.1 (from requests>=2.0.0->sphinx)
+  Using cached urllib3-1.22-py2.py3-none-any.whl
+Collecting chardet<3.1.0,>=3.0.2 (from requests>=2.0.0->sphinx)
+  Using cached chardet-3.0.4-py2.py3-none-any.whl
+Collecting certifi>=2017.4.17 (from requests>=2.0.0->sphinx)
+  Using cached certifi-2017.7.27.1-py2.py3-none-any.whl
+Collecting idna<2.7,>=2.5 (from requests>=2.0.0->sphinx)
+  Using cached idna-2.6-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.3->sphinx)
+Collecting pytz>=0a (from babel!=2.0,>=1.3->sphinx)
+  Using cached pytz-2017.2-py2.py3-none-any.whl
+Installing collected packages: sphinxcontrib-websupport, Pygments, six, alabaster, colorama, snowballstemmer, urllib3, chardet, certifi, idna, requests, docutils, imagesize, MarkupSafe, Jinja2, pytz, babel, sphinx
+Successfully installed Jinja2-2.9.6 MarkupSafe-1.0 Pygments-2.2.0 alabaster-0.7.10 babel-2.5.1 certifi-2017.7.27.1 chardet-3.0.4 colorama-0.3.9 docutils-0.14 idna-2.6 imagesize-0.7.1 pytz-2017.2 requests-2.18.4 six-1.11.0 snowballstemmer-1.2.1 sphinx-1.6.5 sphinxcontrib-websupport-1.0.1 urllib3-1.22
+
+(.venv) d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>pip list
+Package                  Version
+------------------------ -----------
+alabaster                0.7.10
+Babel                    2.5.1
+certifi                  2017.7.27.1
+chardet                  3.0.4
+colorama                 0.3.9
+docutils                 0.14
+idna                     2.6
+imagesize                0.7.1
+Jinja2                   2.9.6
+MarkupSafe               1.0
+pip                      9.0.1
+Pygments                 2.2.0
+pytz                     2017.2
+requests                 2.18.4
+setuptools               28.8.0
+six                      1.11.0
+snowballstemmer          1.2.1
+Sphinx                   1.6.5
+sphinxcontrib-websupport 1.0.1
+urllib3                  1.22
+
+(.venv) d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>cd docs
+
+(.venv) d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\docs>sphinx-quickstart
+Welcome to the Sphinx 1.6.5 quickstart utility.
+
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+
+Enter the root path for documentation.
+> Root path for the documentation [.]:
+
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory "_build" within the root path, or you separate
+"source" and "build" directories within the root path.
+> Separate source and build directories (y/n) [n]:
+
+Inside the root directory, two more directories will be created; "_templates"
+for custom HTML templates and "_static" for custom stylesheets and other static
+files. You can enter another prefix (such as ".") to replace the underscore.
+> Name prefix for templates and static dir [_]:
+
+The project name will occur in several places in the built documentation.
+> Project name: Cookiecutter Context V2 Fork Documentation
+> Author name(s): E.R. Uber
+
+Sphinx has the notion of a "version" and a "release" for the
+software. Each version can have multiple releases. For example, for
+Python the version is something like 2.5 or 3.0, while the release is
+something like 2.5.1 or 3.0a1.  If you don't need this dual structure,
+just set both to the same value.
+> Project version []: 2.0.0-alpha.u+1.6.0
+> Project release [2.0.0-alpha.u+1.6.0]:
+
+If the documents are to be written in a language other than English,
+you can select a language here by its language code. Sphinx will then
+translate text that it generates into that language.
+
+For a list of supported codes, see
+http://sphinx-doc.org/config.html#confval-language.
+> Project language [en]:
+
+The file name suffix for source files. Commonly, this is either ".txt"
+or ".rst".  Only files with this suffix are considered documents.
+> Source file suffix [.rst]:
+
+One document is special in that it is considered the top node of the
+"contents tree", that is, it is the root of the hierarchical structure
+of the documents. Normally, this is "index", but if your "index"
+document is a custom template, you can also set this to another filename.
+> Name of your master document (without suffix) [index]:
+
+Sphinx can also add configuration for epub output:
+> Do you want to use the epub builder (y/n) [n]: y
+
+Please indicate if you want to use one of the following Sphinx extensions:
+> autodoc: automatically insert docstrings from modules (y/n) [n]:
+> doctest: automatically test code snippets in doctest blocks (y/n) [n]:
+> intersphinx: link between Sphinx documentation of different projects (y/n) [n]:
+> todo: write "todo" entries that can be shown or hidden on build (y/n) [n]: y
+> coverage: checks for documentation coverage (y/n) [n]: y
+> imgmath: include math, rendered as PNG or SVG images (y/n) [n]:
+> mathjax: include math, rendered in the browser by MathJax (y/n) [n]:
+> ifconfig: conditional inclusion of content based on config values (y/n) [n]: y
+> viewcode: include links to the source code of documented Python objects (y/n) [n]: y
+> githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]: y
+
+A Makefile and a Windows command file can be generated for you so that you
+only have to run e.g. `make html' instead of invoking sphinx-build
+directly.
+> Create Makefile? (y/n) [y]:
+> Create Windows command file? (y/n) [y]:
+
+Creating file .\conf.py.
+Creating file .\index.rst.
+Creating file .\Makefile.
+Creating file .\make.bat.
+
+Finished: An initial directory structure has been created.
+
+You should now populate your master file .\index.rst and create other documentation
+source files. Use the Makefile to build the docs, like so:
+   make builder
+where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
+
+
+(.venv) d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\docs>dir
+ Volume in drive D is Data
+ Volume Serial Number is 40EB-15E3
+
+ Directory of d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\docs
+
+10/29/2017  11:00 AM    <DIR>          .
+10/29/2017  11:00 AM    <DIR>          ..
+10/29/2017  11:00 AM             6,235 conf.py
+10/29/2017  11:00 AM               562 index.rst
+10/29/2017  11:00 AM               842 make.bat
+10/29/2017  11:00 AM               635 Makefile
+10/29/2017  11:00 AM    <DIR>          _build
+10/29/2017  11:00 AM    <DIR>          _static
+10/29/2017  11:00 AM    <DIR>          _templates
+               4 File(s)          8,274 bytes
+               5 Dir(s)  118,963,724,288 bytes free
+
+==============================================================================
+
+(.venv) d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>pip install cloud_sptheme
+Collecting cloud_sptheme
+  Using cached cloud_sptheme-1.9.4-py2.py3-none-any.whl
+Requirement already satisfied: sphinx>=1.4 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from cloud_sptheme)
+Requirement already satisfied: sphinxcontrib-websupport in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: docutils>=0.11 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: alabaster<0.8,>=0.7 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: imagesize in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: Pygments>=2.0 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: snowballstemmer>=1.1 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: setuptools in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: colorama>=0.3.5; sys_platform == "win32" in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: Jinja2>=2.3 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: six>=1.5 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: babel!=2.0,>=1.3 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: requests>=2.0.0 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: MarkupSafe>=0.23 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from Jinja2>=2.3->sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: pytz>=0a in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from babel!=2.0,>=1.3->sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: urllib3<1.23,>=1.21.1 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from requests>=2.0.0->sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: certifi>=2017.4.17 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from requests>=2.0.0->sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: idna<2.7,>=2.5 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from requests>=2.0.0->sphinx>=1.4->cloud_sptheme)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in d:\devel\_python\__eru\___repos\cookiecutter-v2-fork-docs\.venv\lib\site-packages (from requests>=2.0.0->sphinx>=1.4->cloud_sptheme)
+Installing collected packages: cloud-sptheme
+Successfully installed cloud-sptheme-1.9.4
+
+(.venv) d:\Devel\_python\__eru\___repos\cookiecutter-v2-fork-docs>pip list
+Package                  Version
+------------------------ -----------
+alabaster                0.7.10
+Babel                    2.5.1
+certifi                  2017.7.27.1
+chardet                  3.0.4
+cloud-sptheme            1.9.4
+colorama                 0.3.9
+docutils                 0.14
+idna                     2.6
+imagesize                0.7.1
+Jinja2                   2.9.6
+MarkupSafe               1.0
+pip                      9.0.1
+Pygments                 2.2.0
+pytz                     2017.2
+requests                 2.18.4
+setuptools               28.8.0
+six                      1.11.0
+snowballstemmer          1.2.1
+Sphinx                   1.6.5
+sphinxcontrib-websupport 1.0.1
+urllib3                  1.22
+

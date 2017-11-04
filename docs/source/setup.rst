@@ -21,7 +21,7 @@
 **************************
 Dev/Test Environment Setup
 **************************
-The following sections detail the sets taken to get a development and test
+The following sections detail the steps taken to get a development and test
 environment configured to establish a testing baseline.
 
 Primary development and testing was done using::

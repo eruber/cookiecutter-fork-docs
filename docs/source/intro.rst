@@ -51,9 +51,13 @@ The defect resolution was attained on 29 Oct 2017 with 100% test coverage;
 however, more tests were added on 30 Oct 2017 to cover all **extra context**
 overwrites for each type of field supported in the v2 context.
 
+A couple days were consumed implementing and testing a utility to allow easy
+conversion of a version 1 **cookiecutter** template file to version 2 file.
+This effort is a `separate GitHub project`_.
+
 
 .. _hackebrot's cookiecutter pull request #848: https://github.com/audreyr/cookiecutter/pull/848
 .. _ReadTheDocs: http://cookiecutter.readthedocs.io/en/latest/readme.html
 .. _Cookiecutter Repo on GitHub: https://github.com/audreyr/cookiecutter
 .. _Cookiecutter v2 Fork: https://github.com/eruber/cookiecutter/tree/new-2.0-context/cookiecutter
-
+.. _separate GitHub project: https://github.com/eruber/cookiecutter-template-converter

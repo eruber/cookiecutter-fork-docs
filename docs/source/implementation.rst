@@ -46,20 +46,45 @@ The following goals served to guide the implementation of v2 context support:
 
 4. Cookiecutter's external package dependencies do not change.
 
-5. All existing tests for v1 context (**Cookiecutter 1.6.0**) still pass as originally
+5. Use the context module code referenced by `hackebrot's cookiecutter pull request #848`_ and
+   located in `the new-context-format branch of this hackebrot repo`_.
+
+6. All existing tests for v1 context (**Cookiecutter 1.6.0**) still pass as originally
    written when a v1 context is provided via the **cookiecutter.json** file -- in
    other words, there is *no* contamination of the 1.6.0 codebase by any v2 changes.
 
-6. The new code paths and features implemented that support context v2 have
+7. The new code paths and features implemented that support context v2 have
    tests that follow the testing structure already defined for v1.6.0; and of
    course, these new tests achieve 100% code coverage of any new code paths.
 
 
 Implementation Overview
 =======================
+In keeping with **Implementation Goal #2** (disturb little) only two source files
+were updated.
+
+The first being **cookiecutter/main.py** as shown in the diagram below:
+
+.. image:: _static/cc-main-markup.png
+
+The second source file updated was **cookiecutter/generate.py** as shown in
+the diagram below:
+
+.. image:: _static/cc-generate-markup.png
+
+The only new source file added to the project was **cookiecutter/context.py**
+which implements the v2 context support. This is the code referenced in
+**Implementation Goal #5** above.
+
+The actual repo containing the original version of **context.py** is located
+located in `the new-context-format branch of this hackebrot repo`_.
+
+
+Implementation Statistics
+=========================
 Comparing statement coverage reports between **Cookiecutter** v1.6.0 and v2.0.0
-provides us with a high level overview of where the origional v1.6.0 codebase
-was modified::
+provides us with some indication of how much code was added to the v1.6.0
+codebase (a total of 222 statements) ::
 
                                   v1.6.0  v2.0.0   Delta   Delta
       File Name                    Stmts   Stmts   Stmts     %      Notes
@@ -68,7 +93,7 @@ was modified::
    cookiecutter\__main__.py          3       3       0
    cookiecutter\cli.py              49      49       0
    cookiecutter\config.py           51      51       0
-   cookiecutter\context.py           -     161    +161    +100% <-- v2 new context
+   cookiecutter\context.py           -     163    +163    +100% <-- v2 new context
    cookiecutter\environment.py      21      21       0
    cookiecutter\exceptions.py       24      24       0
    cookiecutter\extensions.py        9       9       0
@@ -84,7 +109,7 @@ was modified::
    cookiecutter\vcs.py              54      54       0
    cookiecutter\zipfile.py          61      61       0
    ---------------------------------------------------------------------------
-                     Stmt Totals   780    1000     220    +28.2%
+                     Stmt Totals   780    1002     222    +28.5%
 
 As you can see from the table above, aside from the version bump, only two
 original v1.6.0 files were modified and only one new file was added.
@@ -113,9 +138,9 @@ process the new v2 context.
 cookiecutter/generate.py
 ------------------------
 The changes made to **cookiecutter/generate.py** all have to do with supporting
-default and extra context overwrites.
+default and extra context overwrites for version 2 templates.
 
-Added **generate.apply_default_overwrites_to_context2()** to mirror for v2
+Added **generate.apply_default_overwrites_to_context_v2()** to mirror for v2
 context what **generate.apply_overwrites_to_context()** does for v1
 context.
 
@@ -199,10 +224,9 @@ The only new file added to the implementation is::
 
 cookiecutter/context.py
 -----------------------
-This file takes care of process the new v2 context -- the base code in this file was written
-by **@hackebrot** and available at `hackebrot's cookiecutter pull request #848`_. If it
-not obvious, from the pull request link, the base code can be found
-`here <https://github.com/hackebrot/cookiecutter/blob/new-context-format/cookiecutter/context.py>`_
+This file takes care of processing the new v2 context -- the base code in this file was written
+by **@hackebrot** and available at `the new-context-format branch of this hackebrot repo`_ and
+is referenced and discussed heavily in  `hackebrot's cookiecutter pull request #848`_.
 
 The following features were added to the base code:
 
@@ -214,8 +238,8 @@ The following features were added to the base code:
    * added validation flags to allow controlling the validation -- ignoring case, etc
    * added docstring comments to document parameters for classes **Variable** and **CookiecutterTemplate**
    * added docstring comments to document parameters for function **load_context()**
-   * insured CLI option `--no-input` also suppresses v2 context prompts
-   * added method **Variable.__str__()**
+   * insured CLI option `--no-input` also suppresses v2 context user prompts
+   * added method **Variable.__str__()** to help with debugging
 
 
 Implementation TODOs
@@ -223,11 +247,22 @@ Implementation TODOs
 The following sections attempt to document what additional implementation
 features could be realized in the future.
 
+The Cookiecutter Command Line
+-----------------------------
+Add a dump context option that emits the context variable list, but does not
+render any project files.
+
+I actually have implemented this is a stand-alone command line tool, after
+implementing it, I realized it would be trivial to just add a flag option to
+the cookiecutter CLI to do this. But this was not implemented herein because
+it would violate **Implementation Goal #3**.
+
 
 cookiecutter/context.py
 -----------------------
 1. Could add a **CookiecutterTemplate.__str__()** that uses the **Variable.__str__()**
-   to realize a complete string dump of the **CookecutterTemplate** object.
+   to realize a complete string dump of the **CookecutterTemplate** object for
+   debugging. This would be very easy to do.
 
 2. A better specification of what differentiates a v1 context from a v2 context
    should be considered in the future. Right now a v2 context must define
@@ -252,7 +287,5 @@ cookiecutter/context.py
 
 
 .. _hackebrot's cookiecutter pull request #848: https://github.com/audreyr/cookiecutter/pull/848
-
-
-
+.. _the new-context-format branch of this hackebrot repo: https://github.com/hackebrot/cookiecutter/tree/new-context-format/
 .. _TOML: https://github.com/toml-lang/toml

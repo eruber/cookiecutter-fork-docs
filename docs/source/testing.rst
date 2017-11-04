@@ -39,13 +39,17 @@ So thus far, 48 tests have been added::
          Test Totals     261     309      48    +18.4%
 
 
-The following new test files & test support directories:
+The was made to keep all version 2 tests in their own files -- this makes them
+more obivous and does not require any edits to existing version 1 test files
+(no contamination of version 1 tests).
+
+The following new test files & test support directories were added:
 
    **tests/test_generate_context_v2.py** - Tests v2 changes made to **generate.py**.
 
    **tests/test-generate-context-v2/** - Contains test support files for **tests/test_generate_context_v2.py**.
 
-   **tests/test_context.py** - Tests new file **context.py**.
+   **tests/test_context.py** - Tests the new v2 file **context.py**.
 
    **tests/test-context/** - Contains test support files for **tests/test_context.py**.
 
@@ -58,7 +62,7 @@ Test coverage for v2.0.0 looks like this::
    cookiecutter\__main__.py          3      0   100%
    cookiecutter\cli.py              49      0   100%
    cookiecutter\config.py           51      0   100%
-   cookiecutter\context.py         161      0   100%       <--- new file
+   cookiecutter\context.py         163      0   100%       <--- new file
    cookiecutter\environment.py      21      0   100%
    cookiecutter\exceptions.py       24      0   100%
    cookiecutter\extensions.py        9      0   100%
@@ -74,9 +78,9 @@ Test coverage for v2.0.0 looks like this::
    cookiecutter\vcs.py              54      0   100%
    cookiecutter\zipfile.py          61      2    97%   10-11
    -----------------------------------------------------------
-   TOTAL                          1000      3    99%
+   TOTAL                          1002      3    99%
 
-   =================== 308 passed, 1 skipped in 42.95 seconds =================
+   =================== 308 passed, 1 skipped in 42.20 seconds =================
 
 
 Also to improve the test coverage report, an additional option was added to
