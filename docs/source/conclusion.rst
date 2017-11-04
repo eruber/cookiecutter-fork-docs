@@ -35,13 +35,15 @@ This whole digression for me snowballed gradually and then gained momentum
 simply because I wanted a "skip_if" feature and I was so impressed by
 hachebrot's **context.py** code.
 
-Another apology for not include Python 2.7 support as per the Contributor
-Guidelines -- I honestly lack the ergs to do it now -- I suspect the issues
-are more with the tests than with the application code -- but quite honestly,
-for me Python 2.7 is a blip on the horizon in my rear-view mirror. However,
-I do want to make the pull request available regardless, to generate some
-discussion and feedback. Perhaps it will ulitmately lead to something positive
-for the **Cookiecutter** community.
+Another apology for not including Python 2.7 support as per the Contributor
+Guidelines -- I honestly lack the ergs to do it now -- I would like to say
+that quite honestly, for me Python 2.7 is a blip on the horizon in my
+rear-view mirror. However, with some help, I am sure we could clear this
+hurdle.
+
+Anyway, I do want to make the pull request available regardless, to generate
+some discussion and feedback. Perhaps it will ulitmately lead to something
+positive for the **Cookiecutter** community.
 
 As menioned in the introduction, I have a repo `here`_ containing a command
 line tool that will convert a version 1 template to a version 2 template.
